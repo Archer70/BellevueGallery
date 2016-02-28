@@ -1,0 +1,10 @@
+{{> page-open.html }}
+        <content>
+            <h2>Gallery</h2>
+            {{# photos }}
+                <a class="gallery-image" href="{{paths.public-url}}/index.php/photo/{{id}}">
+                    <img src="{{paths.public-url}}/photos/{{filename}}" alt="{{description}}">
+                </a>
+            {{/ photos }}
+        </content>
+{{> page-close.html }}

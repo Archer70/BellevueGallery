@@ -1,0 +1,31 @@
+{{> page-open.html }}
+        <header>
+            <a href="{{paths.public-url}}/index.php/gallery/1">&#8672; {{lang.back-to-gallery}}</a>
+            <div id="settings"></div>
+        </header>
+        <content>
+            <h2>{{photo-title}}</h2>
+            <h4 class="photo-description">{{photo-description}}</h4>
+
+            {{> next-previous-links.html }}
+            <img class="photo" src="{{paths.public-url}}/photos/{{photo-filename}}" alt="">
+            {{> next-previous-links.html }}
+
+            <h2>{{lang.comments}}</h2>
+
+            <comment>
+                <h4>User 1</h4>
+                <p>Comment text</p>
+            </comment>
+
+            <comment>
+                <h4>User 2</h4>
+                <p>Comment text</p>
+            </comment>
+
+            <comment>
+                <h4>User 3</h4>
+                <p>Comment text</p>
+            </comment>
+        </content>
+{{> page-close.html }}

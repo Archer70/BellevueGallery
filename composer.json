@@ -1,0 +1,14 @@
+{
+    "name": "bellevue-gallery",
+    "description": "A modern photo gallery software for 2016.",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Bellevue\\": ""
+        }
+    },
+    "require": {
+        "mustache/mustache": "^2.9",
+        "bellevue/router": "@dev"
+    }
+}

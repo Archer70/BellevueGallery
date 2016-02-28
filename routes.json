@@ -1,0 +1,20 @@
+{
+    "default": {
+        "function": "home"
+    },
+    "/": {
+        "function": "home"
+    },
+    "/photo/{id}": {
+        "object": "Bellevue\\src\\controllers\\PhotoController",
+        "construct-arguments": ["object:Bellevue\\src\\controller_dependency_builders\\PhotoDependencyBuilder"],
+        "method": "view",
+        "arguments": ["{id}"]
+    },
+    "/gallery/{id}": {
+        "object": "Bellevue\\src\\controllers\\GalleryController",
+        "construct-arguments": ["object:Bellevue\\src\\controller_dependency_builders\\GalleryDependencyBuilder"],
+        "method": "view",
+        "arguments": ["{id}"]
+    }
+}

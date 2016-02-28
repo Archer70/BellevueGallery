@@ -1,0 +1,59 @@
+@import 'gallery';
+@import 'photo';
+
+$link-color: #3c8aae;
+$text-color: #444;
+$light-border-color: #e8e8e8;
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nato Sans', sans-serif;
+    color: $text-color;
+    background: url(../site_images/light-background.png) repeat;
+}
+
+a, a:visited {
+	color: $link-color;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+hr {
+	border: none;
+	border-top: 1px solid $light-border-color;
+}
+
+header {
+	display: block;
+	padding: 8px;
+	border-bottom: 1px solid $light-border-color;
+}
+
+content {
+	display: block;
+	width: 98%;
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+comment {
+	display: block;
+	border-left: 1px solid $light-border-color;
+	padding-left: 20px;
+
+	h4 {
+	   color: $link-color;
+	}
+
+	p {
+	   padding-left: 10px;
+	}
+}
+
+.clear {
+	clear: both;
+}
